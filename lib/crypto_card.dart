@@ -46,9 +46,9 @@ class CryptoCard extends StatelessWidget {
         confirmDismiss: (DismissDirection direction) async {
           if (direction == DismissDirection.startToEnd) {
             onEdit();
-            return false; // Prevents card from being dismissed on edit swipe
+            return false;
           } else if (direction == DismissDirection.endToStart) {
-            return true; // Allow dismissal on delete swipe
+            return true;
           }
           return false;
         },
